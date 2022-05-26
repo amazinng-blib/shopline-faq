@@ -130,7 +130,7 @@ input {
 }
 
 .instagram {
-  fill: rgb(221, 122, 139);
+  fill: rgb(184, 60, 81);
 }
 
 .sign-up {
@@ -201,11 +201,11 @@ footer {
 .footer-section {
   width: 80%;
   display: flex;
-  column-gap: 11rem;
+  justify-content: space-between;
 }
 
 .footer-section h3 {
-  color: red;
+  color: rgb(108, 67, 223);
   text-transform: capitalize;
 }
 a {
@@ -258,7 +258,7 @@ li {
 }
 .newsletter {
   margin-top: 1rem;
-  width: 95%;
+  width: 93%;
   display: flex;
   justify-content: flex-end;
 }
