@@ -48,25 +48,29 @@ const Footer = () => {
             <li>
               <FaTwitter className="twitter" />
             </li>
-            <FaInstagram className="instagram" />
+            <li>
+              <FaInstagram className="instagram" />
+            </li>
           </ul>
-          <div className="newsletter">
-            <p>sign up for newsletter</p>
-            <form className="footer-input">
-              <input
-                type="mail"
-                placeholder="Email address"
-                className="email"
-                value={mail}
-                onChange={(e) => setMail(e.target.value)}
-              />
-              <button type="submit" className="sub">
-                subscribe
-              </button>
-            </form>
-          </div>
         </div>
       </section>
+      <div className="newsletter">
+        <div className="newsletter-container">
+          <p>sign up for newsletter</p>
+          <form className="footer-input">
+            <input
+              type="mail"
+              placeholder="Email address"
+              className="email"
+              value={mail}
+              onChange={(e) => setMail(e.target.value)}
+            />
+            <button type="submit" className="sub">
+              subscribe
+            </button>
+          </form>
+        </div>
+      </div>
       <p className="copyright">&copy; copyright {date} shopline</p>
     </footer>
   );
