@@ -199,9 +199,9 @@ footer {
 }
 
 .footer-section {
-  width: 90%;
+  width: 80%;
   display: flex;
-  gap: 11rem;
+  column-gap: 11rem;
 }
 
 .footer-section h3 {
