@@ -1,13 +1,351 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  width: 100%;
+  background-color: aquamarine;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 95vw;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.download {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.download img {
+  width: 45%;
+  object-fit: contain;
+}
+
+.section-container {
+  background-color: rgb(115, 177, 212);
+  color: blue;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 1.5rem 0.5rem;
+  border-radius: 0.8rem;
+}
+
+.body {
+  padding: 1rem;
+}
+
+.body > div {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0.5rem;
+  border-radius: 0.8rem;
+}
+
+.section-container h4 {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 2fr 10rem;
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  margin-bottom: 3rem;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.btn {
+  border: none;
+  background-color: blue;
+  border-radius: 1rem;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(1.2%);
+  transition: all ease-out 0.3s;
+}
+
+.contact-section {
+  width: 45%;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.contact-section .icons {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  cursor: pointer;
+}
+
+.twitter {
+  fill: rgb(99, 107, 112);
+}
+.facebook {
+  fill: blue;
+}
+
+.instagram {
+  fill: rgb(221, 122, 139);
+}
+
+.sign-up {
+  width: 100%;
+}
+.sign-up-container {
+  background-color: bisque;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot-container {
+  width: 7rem;
+  height: 5rem;
+  color: #fff;
+  display: flex;
+}
+
+.dot-container div {
+  width: 100%;
+  height: 100%;
+  border-right: 3px dotted gray;
+}
+
+.div-1 {
+  align-self: flex-end;
+  justify-self: start;
+  border-left: 3px dotted gray;
+  border-top: 3px dotted gray;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  margin-top: 3rem;
+  text-transform: capitalize;
+}
+
+.text-section p {
+  align-self: center;
+  text-align: center;
+}
+
+.text-section .btn {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.error {
+  display: flex;
+  min-height: 80vh;
+  background-color: red;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.footer-section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  color: red;
+  text-transform: capitalize;
+}
+a {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+.company {
+  margin-top: 0.6rem;
+}
+
+.about-us {
+  margin-top: 0.6rem;
+}
+.address ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.address svg {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.newsletter {
+  margin-top: 1.5rem;
+}
+.newsletter p {
+  text-transform: uppercase;
+}
+
+.footer-input {
+  display: flex;
+  gap: 1rem;
+}
+
+.email {
+  border-radius: 0.2rem;
+  margin-top: 0.5rem;
+  border: none;
+  outline: none;
+}
+.sub {
+  display: inline;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  color: blue;
+}
+.sub:active {
+  transform: scale(1.2%);
+  transition: all ease-out 0.3s;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .section-container {
+    width: 80%;
+  }
+
+  nav {
+    width: 100%;
+  }
+  .logo {
+    width: 45%;
+    flex-direction: column;
+  }
+
+  .input {
+    display: block;
+    text-align: center;
+    padding: 0 2rem;
+    border-radius: 0.4rem;
+  }
+
+  input {
+    margin-top: 1rem;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  input::placeholder {
+    text-align: center;
+  }
+  .contact-section {
+    width: 60%;
+  }
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+  }
+  .text-section p {
+    align-self: center;
+    text-align: center;
+  }
+
+  .footer-input {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter {
+    width: 100%;
+    transform: translateX(-70%);
+    margin-top: 4rem;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .company {
+    width: 100%;
+  }
+  .about-us {
+    /* margin-left: 1.1rem; */
+    width: 100%;
+  }
+
+  .footer-section {
+    margin: 0 auto;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
